@@ -9,6 +9,7 @@ public class Playercontroller : MonoBehaviour
     [SerializeField] private Rigidbody rb;
     private float _movementX;
     private float _movementZ;
+    private Vector3 _movementToWorldSpace;
 
     // Start is called before the first frame update
     private void Start()

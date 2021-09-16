@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    public GameObject player;
+    public Transform player;
 
     private Vector3 _offset;
+    [SerializeField] private float distanceFromObject = 6f;
     
     
     // Start is called before the first frame update
@@ -18,7 +19,12 @@ public class CameraController : MonoBehaviour
 
     private void LateUpdate()
     {
+        // var lookOnObject = player.position - transform.position;
+        // lookOnObject = player.position - transform.position;
+        // transform.forward = lookOnObject.normalized;
+        // var playerLastPosition = player.position - lookOnObject.normalized * distanceFromObject;;
+        // playerLastPosition.y = player.position.y + distanceFromObject / 2;
+        // transform.position = playerLastPosition;
         transform.position = player.transform.position + _offset;
-        
     }
 }
