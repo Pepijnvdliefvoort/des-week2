@@ -7,9 +7,8 @@ public class CameraController : MonoBehaviour
     public Transform player;
 
     private Vector3 _offset;
-    [SerializeField] private float distanceFromObject = 6f;
-    
-    
+
+
     // Start is called before the first frame update
     private void Start()
     {
